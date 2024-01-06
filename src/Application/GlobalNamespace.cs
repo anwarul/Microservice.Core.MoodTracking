@@ -1,0 +1,16 @@
+﻿global using Microsoft.AspNetCore.JsonPatch;
+global using MongoDB.Bson.Serialization.Attributes;
+global using RedlimeSolutions.Microservice.Framework;
+global using RedlimeSolutions.Microservice.Framework.Core.Queries;
+global using RS.MF.MoodTracking.Application.CommandDtos;
+global using RS.MF.MoodTracking.Application.Dtos;
+global using RS.MF.MoodTracking.Application.ProjectionModel;
+global using RS.MF.MoodTracking.Application.QueryDtos;
+global using RS.MF.MoodTracking.Core.Dtos;
+global using RSMF.Entity.Framework;
+global using RSMF.Entity.Framework.MoodTracking;
+global using System;
+global using System.Collections.Generic;
+global using System.Threading;
+global using System.Threading.Tasks;
+global using RS.MF.MoodTracking.Core.Events;

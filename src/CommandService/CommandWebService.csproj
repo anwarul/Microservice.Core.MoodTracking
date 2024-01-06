@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>RS.MF.ModeTracking.CommandWebService</RootNamespace>
+    <AssemblyName>RS.MF.ModeTracking.CommandWebService</AssemblyName>
+    <Company>anwarul.com</Company>
+    <Authors>anwarul.com</Authors>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Project Volt\Personal\RedlimeSolutions_MicroService\RedlimeSolutions.Microservice.Structure\src\CommandService\RS.MF.ModeTracking.CommandWebService.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RS.Microservice.Framework.ApiDoc" Version="23.12.17.1" />
+    <PackageReference Include="RS.Microservice.Framework.ApiPipline" Version="23.12.17.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="RS.MF.ModeTracking.CommandWebService.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+</Project>

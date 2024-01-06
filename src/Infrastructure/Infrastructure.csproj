@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>RS.MF.MoodTracking.Infrastructure</RootNamespace>
+    <AssemblyName>RS.MF.MoodTracking.Infrastructure</AssemblyName>
+    <Company>anwarul.com</Company>
+    <Authors>anwarul.com</Authors>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="DbContext\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="RS.Microservice.UAM.Driver" Version="23.12.19.1" />
+    <PackageReference Include="RS.Microservice.Framework.GRepositories" Version="23.12.19.1" />
+    <PackageReference Include="RS.Microservice.Framework.ServiceClient" Version="23.12.14.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj" />
+  </ItemGroup>
+
+</Project>

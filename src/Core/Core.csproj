@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>RS.MF.MoodTracking.Core</RootNamespace>
+    <AssemblyName>RS.MF.MoodTracking.Core</AssemblyName>
+    <Company>anwarul.com</Company>
+    <Authors>anwarul.com</Authors>
+    <LangVersion>10</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="RS.M.Framework.Security" Version="23.12.14.3" />
+    <PackageReference Include="RS.Microservice.Framework" Version="23.12.14.1" />
+    <PackageReference Include="RS.Microservice.Framework.CacheClient" Version="23.12.17.1" />
+    <PackageReference Include="RS.Microservice.Framework.Core" Version="23.12.18.3" />
+    <PackageReference Include="RS.Microservice.Framework.Entity" Version="24.1.2.2" />
+    <PackageReference Include="RS.Microservice.Framework.Logger" Version="23.12.14.1" />
+	  <PackageReference Include="RS.MFramework.GraphQl" Version="23.12.14.1" />
+  </ItemGroup>
+
+</Project>

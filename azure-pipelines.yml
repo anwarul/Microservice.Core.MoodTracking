@@ -1,0 +1,29 @@
+trigger:
+  - dev
+  - release
+  - main
+
+resources:
+  - repo: self
+
+variables:
+  - template: pipeline/variables.yml
+stages:
+  - stage: Build
+    displayName: Docker Image
+    jobs:
+      - template: /pipeline/branch-build-push-jobs.yml
+  - stage: Deploy
+    displayName: Deploy To Kubernetes
+    dependsOn: Build
+    jobs:
+      - template: /pipeline/deploy-image-k8s.yml
+  - stage: Buildquery
+    displayName: Docker Image (Queryservice)
+    jobs:
+      - template: /pipeline/branch-queryweb-build-push-jobs.yml
+  - stage: Deployquery
+    displayName: Deploy To Kubernetes (Queryservice)
+    dependsOn: Buildquery
+    jobs:
+      - template: /pipeline/deploy-query-image-k8s.yml
